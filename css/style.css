@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar{
+    flex: 0 0 25px;
+    background-color: black;
+    height: calc(100vh - 50px);
+}
+
+/* Main Conteiner */
+.main-container{
+    flex: 1 1 calc(100% - 50px);
+    background-color: #141922;
+    height: calc(100vh - 50px);
+}
+
+/* Music Controls */
+
+.controls-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #282828;
+    height: 50px;
+}
