@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -12,7 +13,60 @@
     <div class="container">
 
         <!-- Sidebar -->
-        <div class="sidebar"></div>
+        <div class="sidebar">
+            <!-- Div Logo -->
+            <div class="logo">
+                <div>
+                    <img src="img/logo-small.svg" alt="logo">
+                </div>
+                <div>
+                    <img src="img/home.svg" alt="home">
+                    <span class="display-none">Home</span>          
+                </div>
+                <div>
+                    <img src="img/search.svg" alt="search">
+                    <span class="display-none">Cerca</span>
+                </div>
+                <div>
+                    <img src="img/libreria.svg" alt="Library">
+                    <span class="display-none">La tua libreria</span>
+                </div>
+            </div>
+
+            <!-- Div Playlist -->
+            <div class="display-none">
+                <h2>PLAYLIST</h2>
+                <div>
+                    <i class="fas fa-plus-square"></i>
+                    <span>Crea Playlist</span>
+                </div>
+                <div>
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Div User -->
+            <div class="logo">
+                <div>
+                    <img src="img/download.svg" alt="Download">
+                    <span class="display-none">Installa app</span>
+                </div>
+
+                <div>
+                    <img src="img/profile.svg" alt="profile">
+                    <span class="display-none">John Doe</span>
+                </div>
+            </div>
+
+        </div>
 
         <!-- Main Container -->
         <div class="main-container">
@@ -31,12 +85,60 @@
 
             <!-- Artist Container -->
             <div class="album-container-large"></div>
-            
+
         </div>
 
     </div>
 
     <!-- Music Controls -->
-    <div class="controls-container"></div>
+    <div class="controls-container">
+
+        <!-- Nome Brano --> 
+        <div>
+            <div class="nome-canzone">
+                <div>
+                    <img src="img/sinister.jpeg" alt="album">
+                </div>
+
+                <div>
+                    <p>Sinister</p>
+                    <p>Brano Nome</p>
+                </div>
+
+                <div>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comandi musica div Centrale -->
+        <div class="controls-container-center">
+            <div class="controls-icon">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-caret-left"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-caret-right"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+
+            <div class="time-container">
+                <span>0:25</span>
+                <div class="time"></div>
+                <span>4:35</span>
+            </div>
+        </div>
+
+        <!-- Comandi volume -->
+        <div class="volume-container">
+            <div>
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-tv"></i>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="volume"></div>
+        </div>
+    
+    </div>
 </body>
 </html>

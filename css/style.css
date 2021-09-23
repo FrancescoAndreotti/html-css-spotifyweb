@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container{
@@ -13,6 +14,18 @@
     flex: 0 0 25px;
     background-color: black;
     height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 2px 4px 2px;
+}
+
+.display-none{
+    display: none;
+}
+
+.logo img{
+    height: 25px;
 }
 
 /* Main Conteiner */
@@ -22,11 +35,68 @@
     height: calc(100vh - 50px);
 }
 
+
+
 /* Music Controls */
 
 .controls-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #282828;
     height: 50px;
+    gap: 15px;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.controls-container-center{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.controls-icon{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 16px;
+}
+
+.nome-canzone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 130px;
+}
+
+.nome-canzone img{
+    max-width: 30px;
+}
+
+.nome-canzone p{
+    font-size: 12px;
+}
+
+.time-container{
+    display: flex;
+    align-items: center;
+}
+
+.time{
+    height: 2px;
+    background-color: #5A5A5A;
+    flex: 1 1 80%;
+}
+
+.volume-container{
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.volume{
+    width: 70px;
+    height: 4px;
+    background-color: #5A5A5A;
 }
