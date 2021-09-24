@@ -82,13 +82,15 @@ body{
 
 .album-container-large{
     overflow: auto;
+    height: calc(100% - 131px);
 }
 
 .album-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     color: white;
+    gap: 4px;
 }
 
 h2{
@@ -96,7 +98,7 @@ h2{
 }
 
 .card{
-    width: calc(100% / 2);
+    width: calc(100% / 2 - 4px);
     text-align: center;
 }
 
