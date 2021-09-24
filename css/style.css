@@ -22,6 +22,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     padding: 4px 2px 4px 2px;
+    color: #6f7277;
 }
 
 .display-none{
@@ -38,6 +39,10 @@ body{
 
 .sidebar ul{
     list-style-type: none;
+}
+
+.color-white{
+    color: white;
 }
 
 /* Main Conteiner */
@@ -135,6 +140,8 @@ h2{
     padding: 0 5px;
     font-size: 12px;
     color: white;
+    z-index: 99;
+    position: relative;
 }
 
 .controls-container-center{
@@ -171,9 +178,18 @@ h2{
 }
 
 .time{
-    height: 2px;
+    height: 3px;
     background-color: #5A5A5A;
     flex: 1 1 80%;
+    position: relative;
+}
+
+.time-progress{
+    position: absolute;
+    left: 0;
+    background-color: #c1c1c1;
+    width: 30%;
+    height: 3px;
 }
 
 .volume-container{
@@ -184,15 +200,38 @@ h2{
 }
 .volume{
     width: 70px;
-    height: 4px;
+    height: 3px;
     background-color: #5A5A5A;
+    position: relative;
+}
+
+.light-grey{
+    color: #6f7277;
 }
 
 
+/* Effects */
 
+.sidebar span:hover, .sidebar li:hover, .link-container a:hover{
+    color: white;
+}
 
+.card img:hover{
+    filter: brightness(40%);
+}
 
+button:hover{
+    font-size: 14px;
+    transition: 0.5s;
+}
 
+.time-progress:hover{
+    background-color: lawngreen;
+}
+
+.controls-container-center i:hover{
+    font-size: 15px
+}
 
 @media  screen and (min-width: 719px) {
     .sidebar{
