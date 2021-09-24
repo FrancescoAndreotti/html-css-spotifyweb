@@ -21,6 +21,8 @@ body{
     flex-direction: column;
     justify-content: space-between;
     padding: 4px 2px 4px 2px;
+    z-index: 99;
+    
 }
 
 .display-none{
@@ -77,6 +79,37 @@ body{
     color: #77797e;
     padding: 10px;
 }
+
+.album-container-large{
+    overflow: auto;
+}
+
+.album-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+.card{
+    width: calc(100% / 2);
+    text-align: center;
+}
+
+.card img{
+    max-width: 100%;
+}
+
+.card > span{
+    color: #6f7277;
+}
+
+
+
 
 /* Music Controls */
 
